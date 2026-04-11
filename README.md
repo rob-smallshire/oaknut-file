@@ -1,5 +1,28 @@
 # oaknut-file
 
+> [!IMPORTANT]
+> **This repository has moved.** Development of `oaknut-file` now happens in the
+> unified [`oaknut` monorepo](https://github.com/rob-smallshire/oaknut), alongside
+> `oaknut-dfs`, `oaknut-zip`, and the forthcoming family members.
+>
+> **For users:** nothing changes at install time — `pip install oaknut-file` still
+> works and pulls from PyPI as before. Starting with **version 1.0.0**, however, the
+> Python import path changes from `oaknut_file` to `oaknut.file` so it can contribute
+> to the shared `oaknut.*` namespace. Update your code:
+>
+> ```python
+> # Before
+> from oaknut_file import AcornMeta, MetaFormat
+>
+> # After
+> from oaknut.file import AcornMeta, MetaFormat
+> ```
+>
+> **For contributors:** please file issues and pull requests against the monorepo at
+> <https://github.com/rob-smallshire/oaknut>. This repository is archived read-only;
+> the full git history (including per-file `git blame`) is preserved under
+> `packages/oaknut-file/` in the monorepo.
+
 [![PyPI version](https://img.shields.io/pypi/v/oaknut-file.svg)](https://pypi.org/project/oaknut-file/)
 [![CI](https://github.com/rob-smallshire/oaknut-file/actions/workflows/tests.yml/badge.svg)](https://github.com/rob-smallshire/oaknut-file/actions/workflows/tests.yml)
 [![Python versions](https://img.shields.io/pypi/pyversions/oaknut-file.svg)](https://pypi.org/project/oaknut-file/)
